@@ -1,0 +1,142 @@
+
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 400%;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    background: url(./videoplayback.webm);
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color:white;
+    margin-left: 60px;
+    
+  }
+  
+  h1 {
+    font-size: 44px;
+    margin-top: 350px;
+    margin-bottom: 12px;
+  }
+  h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .stake-button {
+    margin-top: 60px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.2em;
+    background-color: black;
+    border-radius: 6px;
+  }
+  
+  .sections {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .section {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .section h2 {
+    font-size: 1.5em;
+  }
+  
+  .section p {
+    font-size: 1em;
+  }
+  
+  .platforms {
+    margin-top: 10px;
+  }
+  
+  .platforms span {
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .content {
+      margin-left: 20px;
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 32px;
+      margin-top: 200px;
+    }
+  
+    h3 {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  
+    .stake-button {
+      font-size: 1.1em;
+      padding: 8px 16px;
+    }
+  
+    .sections {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+  
+    .section {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 28px;
+      margin-top: 150px;
+    }
+  
+    .stake-button {
+      font-size: 1em;
+      padding: 6px 12px;
+    }
+  
+    .sections {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .section {
+      width: 90%;
+    }
+  
+    .platforms span {
+      font-size: 0.8em;
+      padding: 4px 8px;
+    }
+  }

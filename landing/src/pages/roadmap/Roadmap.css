@@ -1,0 +1,170 @@
+.timeline {
+  margin: 10rem 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  /* padding: 4rem 0; */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header */
+.timelineHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(to right, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+/* Create a continuous white line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 248px;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: white;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Toggle Buttons */
+.toggle-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.toggle-btns .p {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: #1f2937;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-btns .p.active {
+  background-color: #2563eb;
+  transform: scale(1.1);
+}
+
+/* Phases and Points */
+.phases {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+  width: 90%;
+  z-index: 1;
+}
+
+/* Quarter Names */
+.phase-no {
+  font-size: 24px;
+  font-weight: bold;
+  background: rgb(0, 0, 0);
+  -webkit-background-clip: text;
+  color: blue;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.pp{
+  background-color: #000;
+  padding-top: 10px;
+}
+/* Each Point */
+.each-point {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32%;
+  gap: 2rem;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+  width: 50%;
+  margin-right: 166px;
+}
+
+.point:nth-child(odd) {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  margin-left: 334px;
+}
+
+.point:nth-child(even) {
+  flex-direction: row;
+  justify-content: flex-start;
+  /* margin-right: px; */
+  
+
+}
+
+
+
+/* Dots and Point Names */
+.point-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  background-color: #1f2937;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  width: fit-content;
+  z-index: 1;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #2563eb;
+  border: 3px solid #000;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* After the Quarter Heading: Create a new line */
+.phase-no::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 2px;
+  height: 30px;
+  background-color: white;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .point {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+  }
+
+  .point-name {
+      text-align: center;
+  }
+}

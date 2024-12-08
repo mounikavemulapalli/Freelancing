@@ -1,0 +1,23 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;1,200;1,400&display=swap'); 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&family=Poppins&display=swap');
+
+@font-face {
+  font-family: 'Avant Garde';
+  font-style: normal;
+  font-weight: 100;
+  src: url('./fonts/4dd591d8-4168-4263-b05b-7183ddaff1f4.woff2') format('woff2'),
+       url('./fonts/90882e39-7091-4415-b231-1e068ccdcc6f.woff') format('woff');
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  background-color: black;
+}
